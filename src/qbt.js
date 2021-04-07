@@ -747,11 +747,11 @@ exports.connect = async (host, username, password) => {
 			/**
 			 * Rename file
 			 * @param {string} hash - The hash of the torrent
-			 * @param {number} id - The id of the file to rename
-			 * @param {string} name - The new name to use for the file
+			 * @param {string} oldPath - The id of the file to rename
+			 * @param {string} newPath - The new name to use for the file
 			 */
-			renameFile: async (hash, id, name) => {
-				return await renameFile(options, cookie, hash, id, name)
+			renameFile: async (hash, newPath, oldPath) => {
+				return await renameFile(options, cookie, hash, newPath, oldPath)
 			},
 			/**
 			 * @typedef {Object} SearchJob
@@ -1207,8 +1207,8 @@ async function setSuperSeeding(options, cookie, hashes, value) {
 	return
 }
 
-async function renameFile(options, cookie, hash, id, name) {
-	await performRequest(options, cookie, '/torrents/renameFile', { hash: hash, id: id, name: encodeURI(name) })
+async function renameFile(options, cookie, hash, oldPath, newPath) {
+	await performRequest(options, cookie, '/torrents/renameFile', { hash: hash, oldPath: oldPath, newPath: encodeURI(newPath) })
 	return
 }
 

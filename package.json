@@ -1,18 +1,41 @@
 {
-  "name": "qbittorrent-api-v2",
-  "version": "1.2.2",
+  "_from": "qbittorrent-api-v2@^1.2.2",
+  "_id": "qbittorrent-api-v2@1.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-v9nkeikj8EjZJ2Ud/QAkTr038PAM4Xk8WXtR8scVb3jidFGs8gMOrZIL05gy4JNo4b0/vxKlwcC2Zu4IpuMslw==",
+  "_location": "/qbittorrent-api-v2",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "qbittorrent-api-v2@^1.2.2",
+    "name": "qbittorrent-api-v2",
+    "escapedName": "qbittorrent-api-v2",
+    "rawSpec": "^1.2.2",
+    "saveSpec": null,
+    "fetchSpec": "^1.2.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/qbittorrent-api-v2/-/qbittorrent-api-v2-1.2.2.tgz",
+  "_shasum": "a995503ca356cad717cf5cc758f0225fdbe8eece",
+  "_spec": "qbittorrent-api-v2@^1.2.2",
+  "_where": "/home/mauro/Node-JS/qbi",
+  "author": {
+    "name": "TheFlow95"
+  },
+  "bugs": {
+    "url": "https://github.com/TheFlow95/node-qbittorrent-api-v2/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Wrapper around qBittorrent's Web API v2 to manage your torrents from Node. Documented and everything.",
-  "main": "src/qbt.js",
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "test": "node test/qbt-tests.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheFlow95/node-qbittorrent-api-v2.git"
-  },
+  "homepage": "https://github.com/TheFlow95/node-qbittorrent-api-v2#readme",
   "keywords": [
     "qbittorrent",
     "bittorrent",
@@ -21,10 +44,15 @@
     "interface",
     "api"
   ],
-  "author": "TheFlow95",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TheFlow95/node-qbittorrent-api-v2/issues"
+  "main": "src/qbt.js",
+  "name": "qbittorrent-api-v2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheFlow95/node-qbittorrent-api-v2.git"
   },
-  "homepage": "https://github.com/TheFlow95/node-qbittorrent-api-v2#readme"
+  "scripts": {
+    "test": "node test/qbt-tests.js"
+  },
+  "version": "1.2.2"
 }
